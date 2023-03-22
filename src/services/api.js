@@ -5,10 +5,12 @@ const callApi = (houseName) => {
   return fetch(`https://hp-api.onrender.com/api/characters/house/${houseName}`)
     .then((response) => response.json())
     .then((response) => {
-      return response.map((pepino) => {
+      return response.map((data) => {
         return {
-          name: pepino.name,
-          id: pepino.id
+          name: data.name,
+          id: data.id,
+          species: data.species,
+          image: data.image
         }
       });
     });
