@@ -29,20 +29,11 @@ function App() {
     setHouseSelect(ev.target.value);
   };
 
-  // const error = characterData.character
-  const characterFiltered = characterData.filter(
-    (each) => {
-      //    if(searchCharacter === !error ){
-
-      //       return {`No hay ningún personaje que coincida con ${error}`}
-      // }else{
-      return each.name
-        .toLocaleLowerCase()
-        .includes(searchCharacter.toLocaleLowerCase());
-    }
-
-    // }
-  );
+  const characterFiltered = characterData.filter((each) => {
+    return each.name
+      .toLocaleLowerCase()
+      .includes(searchCharacter.toLocaleLowerCase());
+  });
 
   const { pathname } = useLocation();
   const dataUrl = matchPath("/detail/:id", pathname);
@@ -71,15 +62,12 @@ function App() {
                   handleHouseSelect={handleHouseSelect}
                   houseSelect={houseSelect}
                 />
-                
-                  {characterFiltered.length > 0 ? (
-                    <CharacterList
-                      characterData={characterFiltered}
-                    />
-                  ) : (<p  className="error__message">{`No hay personajes que coincidan con ${searchCharacter}`}</p>
-                    
-                  )}
-                
+
+                {characterFiltered.length > 0 ? (
+                  <CharacterList characterData={characterFiltered} />
+                ) : (
+                  <p className="error__message">{`No hay personajes que coincidan con ${searchCharacter}`}</p>
+                )}
               </>
             }
           />
