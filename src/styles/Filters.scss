@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Benne";
+    src: url("../fonts/Benne-Regular.otf");
+}
+.filters{
+    background-color: #313840;
+    padding: 30px;
+    color: #b9cab7;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Benne";
+    @media all and (min-width: 1024px) {
+            font-size: 20px;
+        }
+    
+    &__form{
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        @media all and (min-width: 1024px) {
+                flex-direction: row;
+            }
+    }
+}

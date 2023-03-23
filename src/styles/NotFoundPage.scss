@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Benne";
+    src: url("../fonts/Benne-Regular.otf");
+}
+.main{
+         background-color: #6e8185;
+         display: flex;
+         justify-content: center;
+         padding-top: 30px;
+         padding-bottom: 30px;
+         font-family: 'Benne';
+        font-size: 30px;
+}
+.link__icon {
+    text-decoration: none;
+    margin: 30px;
+
+}
+
+.fa-arrow-left {
+    color: #b9cab7;
+    font-size: 60px;
+}

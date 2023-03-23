@@ -1,0 +1,14 @@
+.characterList {
+      display: grid;
+      grid-template-columns: 1fr ;
+      margin: auto;
+      margin-top: 60px;
+      list-style: none;
+      justify-items: center;
+      gap: 20px;
+      @media all and (min-width: 1024px) {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+}
+       
+        

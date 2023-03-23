@@ -1,0 +1,73 @@
+// .divDetail {
+//     color: #1b1c1d;
+//     background-image: url(../../components/imges/harry_background.png);
+//     background-size: 50%;
+// }
+@font-face {
+    font-family: 'Benne';
+    src: url('../fonts/Benne-Regular.otf');
+}
+.article {
+    background-color: #6e8185;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Benne';
+
+    &__div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        align-self: center;
+        border-radius: 20px;
+        background-color: #32363f;
+        padding: 15px;
+        // gap: 15px;
+
+        &__img {
+            object-fit: cover;
+            width: 200px;
+            height: 250px;
+            border-radius: 20px;
+        }
+
+        &__text {
+            text-transform: capitalize;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 20px;
+                color: #b9cab7;
+                text-align: center;
+                font-size: 20px;
+            &__name {
+                font-size: 30px;
+                color: #c6d6b9;
+            }
+           
+        }
+    }
+
+}
+.link__icon{
+    text-decoration: none;
+    margin: 30px;
+    
+}
+.fa-arrow-left {
+    color: #b9cab7;
+    font-size: 60px;
+}
+.error{
+    font-size: 30px;
+        color: #c6d6b9;
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            padding: 50px;
+            height: 800px;
+            font-family: "Benne";
+}
