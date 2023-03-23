@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "./static/css/main.cdf26164.css",
+    "main.js": "./static/js/main.57e81bb9.js",
+    "static/media/pngegg.png": "./static/media/pngegg.ee31658a5a6736912f7b.png",
+    "static/media/fondoimagen.jpg": "./static/media/fondoimagen.b23386f845adf71af906.jpg",
+    "static/media/Benne-Regular.otf": "./static/media/Benne-Regular.b89f92b318f46be4ccac.otf",
+    "static/media/p17634-1224667957.jpg": "./static/media/p17634-1224667957.c4c7aa89b45946b109d7.jpg",
+    "index.html": "./index.html",
+    "main.cdf26164.css.map": "./static/css/main.cdf26164.css.map",
+    "main.57e81bb9.js.map": "./static/js/main.57e81bb9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cdf26164.css",
+    "static/js/main.57e81bb9.js"
+  ]
+}
