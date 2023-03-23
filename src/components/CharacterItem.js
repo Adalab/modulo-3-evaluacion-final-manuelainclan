@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom";
+
 function CharacterItem({ eachCharacter }) {
   return (
     <li>
+      <Link to={`/detail/${eachCharacter.id}`} >
       <img
         src={
           eachCharacter.image
@@ -11,6 +14,7 @@ function CharacterItem({ eachCharacter }) {
       />
       <p>{eachCharacter.name}</p>
       <p>{eachCharacter.species}</p>
+      </Link>
     </li>
   );
 }

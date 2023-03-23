@@ -10,7 +10,11 @@ const callApi = (houseName) => {
           name: data.name,
           id: data.id,
           species: data.species,
-          image: data.image
+          image: data.image,
+          alive: data.alive,
+          gender: data.gender,
+          house: data.house,
+          alternate_names: data.alternate_names
         }
       });
     });
